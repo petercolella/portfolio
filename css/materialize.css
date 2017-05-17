@@ -8973,7 +8973,7 @@ span {
     transition: .5s;
 }
 .fa-github:hover {
-    background-color: black;
+    color: black;
 }
 .fa-linkedin {
     padding:5px;
@@ -8984,7 +8984,7 @@ span {
     transition: .5s;
 }
 .fa-linkedin:hover {
-    background-color: #0073a4;
+    color: #0073a4;
 }
 
 .fa-twitter {
@@ -8996,5 +8996,25 @@ span {
     transition: .5s;
 }
 .fa-twitter:hover {
-    background-color: #00aced;
+    color: #00aced;
+}
+
+.fa-envelope-o {
+    padding:5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-envelope-o:hover {
+    color: #db3236;
+}
+
+span.website:hover {
+    color: orange;
+}
+
+.brand-logo:hover {
+    color: orange;
 }
