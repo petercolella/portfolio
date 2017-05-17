@@ -7907,8 +7907,8 @@ input[type=range]:focus::-ms-fill-upper {
 .slider .slides li .caption {
   color: #fff;
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 33%;
+  left: 17%;
   width: 70%;
   opacity: 0;
 }
@@ -7943,7 +7943,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #616161;
 }
 
 .carousel {
@@ -8949,4 +8949,52 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+span {
+    margin-right: 10px;
+}
+.fa-github {
+    padding:5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-github:hover {
+    background-color: black;
+}
+.fa-linkedin {
+    padding:5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-twitter {
+    padding:5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
 }
