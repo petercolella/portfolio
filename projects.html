@@ -1,161 +1,171 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Peter Colella</title>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel='stylesheet' href='css/materialize.css'/>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Peter Colella</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel='stylesheet' href='css/materialize.css'/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-
-    <body style="background-color: #424242">
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper blue-grey">
-            <a href="#" class="brand-logo right">Peter Colella</a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li class="active"><a href="projects.html">Projects</a></li>
-              <li><a href="resume.html">Resume</a></li>
+<body style="background-color: #424242">
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue-grey">
+          <a href="#" class="brand-logo right">Peter Colella</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li class="active"><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </header>
+  <main>  
+    <div class="container hoverable">
+      <div class="card-panel grey lighten-3">
+        <h2 class="header center">Projects</h2>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs hoverable">
+              <li class="tab col s3"><a href="#test1">Connect Four</a></li>
+              <li class="tab col s3"><a href="#test2">Trigger Happy</a></li>
+              <li class="tab col s2"><a href="#test3">Imbible</a></li>
+              <li class="tab col s2"><a href="#test4">City Tips</a></li>
+              <li class="tab col s2"><a href="#test5">V.i.A</a></li>
             </ul>
           </div>
-        </nav>
+          <div id="test1" class="col s12">
+            <!-- <div class="row"> -->
+              <!-- <div class="col s12 m7"> -->
+                <div class="card">
+                  <div class="card-image">
+                    <img src="./images/connect-four-1.png">
+                    <!-- <span class="card-title" style="color: orange">Connect Four</span> -->
+                  </div>
+                  <div class="card-content hoverable">
+                    <p>Player One plays the black pieces and Player Two plays the red pieces. Player One begins by clicking on column of his/her choice. Pieces automatically move to the lowest available space in the selected column. The object of the game is to connect four of your checkers in a row horizontally, vertically, or diagonally. After a game has been won, the scoreboard is updated. The board is cleared by clicking the new game button.</p>
+                  </div>
+                  <div class="card-action hoverable">
+                    <a target="_blank" href="https://petercolella.github.io/Connect-Four-Game/">Link to Deployment URL</a>
+                  </div>
+                </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div id="test2" class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="./images/trigger-happy-1.png">
+                <!-- <span class="card-title" style="color: orange">Trigger Happy</span> -->
+              </div>
+              <div class="card-content hoverable">
+                <p>This application allows users to share their favorite ASMR videos and provide specific information about the "Triggers" found in each one.</p>
+              </div>
+              <div class="card-action hoverable">
+                <a target="_blank" href="https://asmr-trigger-happy.herokuapp.com/">Link to Deployment URL</a>
+              </div>
+            </div>
+          </div>
+          <div id="test3" class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="./images/imbible-1.png">
+                <!-- <span class="card-title" style="color: orange">Imbible</span> -->
+              </div>
+              <div class="card-content hoverable">
+                <p>Imbible is an app that lets users submit whatever they have on hand to discover what classic cocktails they are able to craft with their limited resources. In addition, a user can add whatever concoction they came up with to our list of libations and have others review it.</p><br><p>We wanted to reintroduce our users to the storied world of mixology. In doing so, we hope that they gain a renewed appreciation of the art to making a good drink. Just as one eats not only to be nourished, but to enjoy the flavors created through the love of food, one should drink not to be intoxicated, but to experience a similar enjoyment. We made our app with hope that we could contribute to that enjoyment.</p>
+              </div>
+              <div class="card-action hoverable">
+                <a target="_blank" href="https://imbible3.herokuapp.com/#!/">Link to Deployment URL</a>
+              </div>
+            </div>
+          </div>
+          <div id="test4" class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="./images/city-data-1.png">
+                <!-- <span class="card-title" style="color: orange">City Data</span> -->
+              </div>
+              <div class="card-content hoverable">
+                <p>This is a Ruby on Rails app where users can view and leave tips for their favorite cities.</p>
+              </div>
+              <div class="card-action hoverable">
+                <a target="_blank" href="https://city-tips.herokuapp.com/">Link to Deployment URL</a>
+              </div>
+            </div>
+          </div>
+          <div id="test5" class="col s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="./images/via-1.png">
+                <!-- <span class="card-title" style="color: orange">V.i.A</span> -->
+              </div>
+              <div class="card-content hoverable">
+                <p>V.i.A is an app that provides user access to key information about a company or organization's approved vendors and purveyors. The app is especially applicable to the restaurant industry in which a wide array of vendors are dealt with on a daily basis. Additionally, the specific information for each vendor changes often and sometimes is not readily communicated from upper management to those who actually use the information.</p><br><p>With this app, users not only have access to vendor information. They can also call, email, link to the vendor's website, and get driving directions if it's necesssary to go to the vendor's location. In short, V.i.A keeps the user's resources organized and accessible.</p>
+              </div>
+              <div class="card-action hoverable">
+                <a target="_blank" href="https://via-vendor-app.herokuapp.com/">Link to Deployment URL</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <main>  
-        <div class="container hoverable">
-          <div class="card-panel grey lighten-3">
-            <h2 class="header center">Projects</h2>
-            <div class="row">
-              <div class="col s12">
-                <ul class="tabs hoverable">
-                  <li class="tab col s3"><a href="#test1">Connect Four</a></li>
-                  <li class="tab col s3"><a href="#test2">Trigger Happy</a></li>
-                  <li class="tab col s2"><a href="#test3">Imbible</a></li>
-                  <li class="tab col s2"><a href="#test4">City Tips</a></li>
-                  <li class="tab col s2"><a href="#test5">V.i.A</a></li>
-                </ul>
-              </div>
-              <div id="test1" class="col s12">
-                <!-- <div class="row"> -->
-                  <!-- <div class="col s12 m7"> -->
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="./images/connect-four-1.png">
-                        <!-- <span class="card-title" style="color: orange">Connect Four</span> -->
-                      </div>
-                      <div class="card-content hoverable">
-                        <p>Player One plays the black pieces and Player Two plays the red pieces. Player One begins by clicking on column of his/her choice. Pieces automatically move to the lowest available space in the selected column. The object of the game is to connect four of your checkers in a row horizontally, vertically, or diagonally. After a game has been won, the scoreboard is updated. The board is cleared by clicking the new game button.</p>
-                      </div>
-                      <div class="card-action hoverable">
-                        <a target="_blank" href="https://petercolella.github.io/Connect-Four-Game/">Link to Deployment URL</a>
-                      </div>
-                    </div>
-                  <!-- </div> -->
-                <!-- </div> -->
-              </div>
-              <div id="test2" class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="./images/trigger-happy-1.png">
-                    <!-- <span class="card-title" style="color: orange">Trigger Happy</span> -->
-                  </div>
-                  <div class="card-content hoverable">
-                    <p>This application allows users to share their favorite ASMR videos and provide specific information about the "Triggers" found in each one.</p>
-                  </div>
-                  <div class="card-action hoverable">
-                    <a target="_blank" href="https://asmr-trigger-happy.herokuapp.com/">Link to Deployment URL</a>
-                  </div>
-                </div>
-              </div>
-              <div id="test3" class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="./images/imbible-1.png">
-                    <!-- <span class="card-title" style="color: orange">Imbible</span> -->
-                  </div>
-                  <div class="card-content hoverable">
-                    <p>Imbible is an app that lets users submit whatever they have on hand to discover what classic cocktails they are able to craft with their limited resources. In addition, a user can add whatever concoction they came up with to our list of libations and have others review it.</p><br><p>We wanted to reintroduce our users to the storied world of mixology. In doing so, we hope that they gain a renewed appreciation of the art to making a good drink. Just as one eats not only to be nourished, but to enjoy the flavors created through the love of food, one should drink not to be intoxicated, but to experience a similar enjoyment. We made our app with hope that we could contribute to that enjoyment.</p>
-                  </div>
-                  <div class="card-action hoverable">
-                    <a target="_blank" href="https://imbible3.herokuapp.com/#!/">Link to Deployment URL</a>
-                  </div>
-                </div>
-              </div>
-              <div id="test4" class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="./images/city-data-1.png">
-                    <!-- <span class="card-title" style="color: orange">City Data</span> -->
-                  </div>
-                  <div class="card-content hoverable">
-                    <p>This is a Ruby on Rails app where users can view and leave tips for their favorite cities.</p>
-                  </div>
-                  <div class="card-action hoverable">
-                    <a target="_blank" href="https://city-tips.herokuapp.com/">Link to Deployment URL</a>
-                  </div>
-                </div>
-              </div>
-              <div id="test5" class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="./images/via-1.png">
-                    <!-- <span class="card-title" style="color: orange">V.i.A</span> -->
-                  </div>
-                  <div class="card-content hoverable">
-                    <p>V.i.A is an app that provides user access to key information about a company or organization's approved vendors and purveyors. The app is especially applicable to the restaurant industry in which a wide array of vendors are dealt with on a daily basis. Additionally, the specific information for each vendor changes often and sometimes is not readily communicated from upper management to those who actually use the information.</p><br><p>With this app, users not only have access to vendor information. They can also call, email, link to the vendor's website, and get driving directions if it's necesssary to go to the vendor's location. In short, V.i.A keeps the user's resources organized and accessible.</p>
-                  </div>
-                  <div class="card-action hoverable">
-                    <a target="_blank" href="https://via-vendor-app.herokuapp.com/">Link to Deployment URL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
+  </main>
+  <footer class="page-footer blue-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Like what you see?</h5>
+          <p class="grey-text text-lighten-4">I look forward to connecting with you and starting a conversation!</p>
+        </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul style="display: inline-flex;">
+              <li><a class="grey-text text-lighten-3" href="https://github.com/petercolella"><i class="fa fa-github" style="font-size: 2em"></i></a></li>
+              <span></span>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/peter-colella/"><i class="fa fa-linkedin" style="font-size: 2em"></i></a></li>
+              <span></span>
+              <li><a class="grey-text text-lighten-3" href="https://twitter.com/_PeterColella"><i class="fa fa-twitter" style="font-size: 2em"></i></a></li>
+              <span></span>
+              <li><a class="grey-text text-lighten-3" href="mailto:colella.peter.j@gmail.com"><i class="fa fa-envelope-o" style="font-size: 2em"></i></a></li>
+            </ul>
           </div>
         </div>
-      </main>
-      <footer class="page-footer blue-grey">
+      </div>
+      <div class="footer-copyright">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Like what you see?</h5>
-              <p class="grey-text text-lighten-4">I look forward to connecting with you and starting a conversation!</p>
-            </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul style="display: inline-flex;">
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/petercolella"><i class="fa fa-github" style="font-size: 2em"></i></a></li>
-                  <span></span>
-                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/peter-colella/"><i class="fa fa-linkedin" style="font-size: 2em"></i></a></li>
-                  <span></span>
-                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/_PeterColella"><i class="fa fa-twitter" style="font-size: 2em"></i></a></li>
-                  <span></span>
-                  <li><a class="grey-text text-lighten-3" href="mailto:colella.peter.j@gmail.com"><i class="fa fa-envelope-o" style="font-size: 2em"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Peter Colella
-            <a class="grey-text text-lighten-4 right" href="https://www.petercolella.com/"><span class="website">petercolella.com</span></a>
-            </div>
-          </div>
+        © 2017 Peter Colella
+        <a class="grey-text text-lighten-4 right" href="https://www.petercolella.com/"><span class="website">petercolella.com</span></a>
         </div>
-      </footer>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript">
-        $(document).ready(function(){
-        $('.slider').slider();
-        });
-      </script>
-    </body>
-  </html>
+      </div>
+    </div>
+  </footer>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.slider').slider();
+    $(".button-collapse").sideNav();
+    });
+  </script>
+</body>
+</html>
