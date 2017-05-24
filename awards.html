@@ -22,53 +22,43 @@
           <a href="#" class="brand-logo right">Peter Colella</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="awards.html">Awards</a></li>
+            <li class="active"><a href="awards.html">Awards</a></li>
           </ul>
         </div>
       </nav>
     </div>
-      <ul class="side-nav" id="mobile-demo">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
   </header>
   <main>
-  <div class="container hoverable">
-    <div class="card-panel grey lighten-3">
-      <h2 class="header center">Welcome</h2>
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="./images/chef-fire.jpg" alt="chef-fire">
-            <div class="caption left-align">
-              <h2>The Restaurant Industry</h2>
-              <h4 class="light grey-text text-lighten-3">Brought me to Atlanta.</h4>
+    <div class="container hoverable">
+      <div class="card-panel grey lighten-3">
+        <div class="col s12 m7 l8">
+          <h2 class="header center">Awards</h2>
+          <div class="card">
+            <div class="card-image hoverable">
+              <img src="./images/angelhack.jpg">
+              <span class="card-title">AngelHack Global Hackathon Series: Atlanta, May 20 2017</span>
             </div>
-          </li>
-          <li>
-            <img src="./images/atlanta_skyline_2.jpg" alt="atlanta">
-            <div class="caption center-align">
-              <h2>Atlanta</h2>
-              <h4 class="light grey-text text-lighten-5">Took me to General Assembly.</h4>
+            <div class="card-content hoverable">
+              <p>Winner: Best Voice User Experience Using Amazon Alexa</p>
             </div>
-          </li>
-          <li>
-            <img src="./images/ga-atlanta.jpg" alt="ga-atlanta">
-            <div class="caption right-align">
-              <h2>General Assembly</h2>
-              <h4 class="light grey-text text-lighten-5">Has led us here.</h4>
+            <div class="card-action hoverable">
+              <a target="_blank" href="http://www.hackathon.io/job-hunt1">Project Link at Hackathon.io</a>
+              <a target="_blank" href="https://github.com/petercolella/job-hunt-lambda-function/blob/master/lambda.js">Link to the Code on GitHub</a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </main>
   <footer class="page-footer blue-grey">
     <div class="container">
@@ -104,9 +94,7 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-    $('.slider').slider( {
-      interval:3000
-    });
+    $('.slider').slider();
     $(".button-collapse").sideNav();
     });
   </script>
