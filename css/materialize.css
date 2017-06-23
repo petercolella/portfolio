@@ -8965,7 +8965,7 @@ span {
     margin-right: 10px;
 }
 .fa-github {
-    padding:5px;
+    padding-left: 5px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -8976,7 +8976,7 @@ span {
     color: black;
 }
 .fa-linkedin {
-    padding:5px;
+    padding-left:5px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -8988,7 +8988,7 @@ span {
 }
 
 .fa-twitter {
-    padding:5px;
+    padding-left:5px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -9000,7 +9000,7 @@ span {
 }
 
 .fa-envelope-o {
-    padding:5px;
+    padding-left:5px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
