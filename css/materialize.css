@@ -3365,7 +3365,7 @@ nav ul a span.badge {
 }
 
 .section {
-  padding-top: 1rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
 }
 
@@ -8955,6 +8955,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    /*background-color: #424242;*/
   }
 
   main {
@@ -9017,4 +9018,18 @@ span.website:hover {
 
 .brand-logo:hover {
     color: orange;
+}
+
+.slider, .slides {
+  height: 100vh !important;
+  top: -64px;
+}
+
+.slider .indicators {
+z-index: 9999;
+/*bottom: 0px;*/
+}
+
+#about-text {
+  color: white;
 }
