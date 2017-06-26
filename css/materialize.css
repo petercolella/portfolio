@@ -9033,3 +9033,11 @@ z-index: 9999;
 #about-text {
   color: white;
 }
+
+#about {
+  min-height: 100vh;
+}
+
+#about-card-content {
+  color: white;
+}
