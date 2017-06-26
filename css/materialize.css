@@ -8952,6 +8952,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 body {
+  /*background-image: url("bckgrd.jpg");*/
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -9040,4 +9041,8 @@ z-index: 9999;
 
 #about-card-content {
   color: white;
+}
+
+.background {
+  opacity: .1;
 }
