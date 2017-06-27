@@ -86,7 +86,7 @@
   </div>
   </div>
   
-  <div class="section" id="projects">
+  <div class="section" id="projects" style="opacity: 0;">
   <div class="container hoverable">
     <div class="card-panel green darken-2">
       <h2 class="header center">Projects</h2>
@@ -175,7 +175,7 @@
   </div>
   </div>
   
-  <div class="section" id="awards">
+  <div class="section" id="awards" style="opacity: 0;">
   <div class="container hoverable">
     <div class="card-panel yellow darken-2">
       <div class="col s12 m7 l8">
@@ -261,6 +261,12 @@
         Materialize.showStaggeredList($(el));
       } },
       {selector: '#about', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#projects', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#awards', offset: 500, callback: function(el) {
         Materialize.fadeInImage($(el));
       } }
     ];
