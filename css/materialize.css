@@ -8952,29 +8952,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 body {
-  /*background-image: url("bckgrd.jpg");*/
-  /*background-image: url("../images/white_matrix.gif");*/
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  /*background-color: #424242;*/
-}
-
-.background-opacity {
-  position: relative;
-}
-
-.background-opacity:after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../images/white_matrix.gif"); 
-  width: 100%;
-  height: 100%;
-  opacity : 0.1;
-  z-index: -1;
 }
 
 main {
@@ -9053,13 +9033,65 @@ z-index: 9999;
   color: white;
 }
 
-#about {
+.about {
   min-height: 100vh;
-  /*background-image: url("../images/white_matrix.gif");*/
+  position: relative;
+}
+
+.about:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/white_matrix.gif"); 
+  width: 100%;
+  height: calc(100% + 64px);
+  opacity : 0.1;
+  z-index: -1;
+  top: -64px;
 }
 
 #about-card-content {
   color: white;
+}
+
+.projects {
+  min-height: 100vh;
+  position: relative;
+}
+
+.projects:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/gears.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity : 0.1;
+  z-index: -1;
+}
+
+.awards {
+  min-height: 100vh;
+  position: relative;
+}
+
+.awards:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/confetti.gif"); 
+  width: 100%;
+  height: 100%;
+  opacity : 0.1;
+  z-index: -1;
 }
 
 .resume {
@@ -9067,22 +9099,18 @@ z-index: 9999;
   height: 300px;
 }
 
-#resume {
-  /*height: 80% !important;*/
-}
-
-#resume-content {
-  /*box-sizing: content-box !important;*/
-}
-
 #resume-header {
   color: black;
 }
 
-body.background {
-  opacity: .1;
-}
-
 h2 {
   color: white;
+}
+
+.parallax-container {
+  opacity: 0.75;
+}
+
+.parallax-container:hover {
+  opacity: 1.0 !important;
 }

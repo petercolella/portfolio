@@ -23,9 +23,9 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="index.html">Welcome</a></li>
-          <li><a href="index.html#about">About Me</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#awards">Awards</a></li>
+          <li><a href="index.html#about-link">About Me</a></li>
+          <li><a href="index.html#projects-link">Projects</a></li>
+          <li><a href="index.html#awards-link">Awards</a></li>
           <li><a href="#resume">Resume</a></li>
         </ul>
       </div>
@@ -33,13 +33,13 @@
   </div>
     <ul class="side-nav" id="mobile-demo">
       <li><a href="index.html">Welcome</a></li>
-      <li><a href="index.html#about">About Me</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#awards">Awards</a></li>
+      <li><a href="index.html#about-link">About Me</a></li>
+      <li><a href="index.html#projects-link">Projects</a></li>
+      <li><a href="index.html#awards-link">Awards</a></li>
       <li><a href="#resume">Resume</a></li>
     </ul>
 </header>
-<main class="background-opacity">
+<main>
   <div class="slider">
     <ul class="slides" style="text-shadow: 1px 1px black;">
       <li>
@@ -66,8 +66,8 @@
     </ul>
   </div>
   
-  <div class="section" id="about" style="opacity: 0;">
-  <div class="container hoverable">
+  <div class="section about" id="about-link">
+  <div class="container hoverable" id="about" style="opacity: 0;">
     <div class="card-panel blue darken-2">
       <div class="col s12 m7 l8">
         <h2 class="header center" id="about-text">About Me</h2>
@@ -85,9 +85,13 @@
     </div>
   </div>
   </div>
+
+  <div class="parallax-container materialboxed">
+    <div class="parallax"><img src="./images/projects2.jpg"></div>
+  </div>
   
-  <div class="section" id="projects" style="opacity: 0;">
-  <div class="container hoverable">
+  <div class="section projects" id="projects-link">
+  <div class="container hoverable" id="projects" style="opacity: 0;">
     <div class="card-panel green darken-2">
       <h2 class="header center">Projects</h2>
       <div class="row">
@@ -174,9 +178,13 @@
     </div>
   </div>
   </div>
+
+  <div class="parallax-container materialboxed">
+    <div class="parallax"><img src="./images/awards3.jpg"></div>
+  </div>
   
-  <div class="section" id="awards" style="opacity: 0;">
-  <div class="container hoverable">
+  <div class="section awards" id="awards-link">
+  <div class="container hoverable" id="awards" style="opacity: 0;">
     <div class="card-panel yellow darken-2">
       <div class="col s12 m7 l8">
         <h2 class="header center">Awards</h2>
@@ -216,7 +224,7 @@
     </div>
   </div>
 </main>
-<footer class="page-footer blue-grey">
+<footer class="page-footer grey darken-2">
   <div class="container">
     <div class="row center">
       <ul style="display: inline-flex;">
@@ -248,6 +256,7 @@
   $(".button-collapse").sideNav();
   });
   $('.modal').modal();
+  $('.parallax').parallax();
 </script>
 <script type="text/javascript">
   var options = [
@@ -260,13 +269,13 @@
       {selector: '#staggered-test', offset: 400, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
-      {selector: '#about', offset: 500, callback: function(el) {
+      {selector: '#about', offset: 200, callback: function(el) {
         Materialize.fadeInImage($(el));
       } },
-      {selector: '#projects', offset: 500, callback: function(el) {
+      {selector: '#projects', offset: 200, callback: function(el) {
         Materialize.fadeInImage($(el));
       } },
-      {selector: '#awards', offset: 500, callback: function(el) {
+      {selector: '#awards', offset: 200, callback: function(el) {
         Materialize.fadeInImage($(el));
       } }
     ];
