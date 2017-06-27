@@ -9062,6 +9062,23 @@ z-index: 9999;
   color: white;
 }
 
+.resume {
+  width: 100%;
+  height: 300px;
+}
+
+#resume {
+  /*height: 80% !important;*/
+}
+
+#resume-content {
+  /*box-sizing: content-box !important;*/
+}
+
+#resume-header {
+  color: black;
+}
+
 body.background {
   opacity: .1;
 }
