@@ -9108,9 +9108,9 @@ h2 {
 }
 
 .parallax-container {
-  opacity: 0.75;
+  /*opacity: 0.5;*/
 }
 
 .parallax-container:hover {
-  opacity: 1.0 !important;
+  /*opacity: 1.0 !important;*/
 }
