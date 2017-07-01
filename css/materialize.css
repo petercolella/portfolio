@@ -9076,6 +9076,11 @@ z-index: 9999;
   z-index: -1;
 }
 
+#projects-title {
+  background-image: url("../images/gears.gif");
+  background-size: cover;
+}
+
 .awards {
   min-height: 100vh;
   position: relative;
@@ -9092,6 +9097,12 @@ z-index: 9999;
   height: 100%;
   opacity : 0.1;
   z-index: -1;
+}
+
+#awards-title {
+  background-image: url("../images/confetti.gif");
+  background-size: cover;
+  text-shadow: 2px 2px black;
 }
 
 .resume {
@@ -9113,4 +9124,8 @@ h2 {
 
 .parallax-container:hover {
   /*opacity: 1.0 !important;*/
+}
+
+.section-title {
+  border-radius: 17px;
 }

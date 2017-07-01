@@ -4805,7 +4805,7 @@ if (jQuery) {
     }
     var time = 0;
     element.find('li').velocity(
-        { translateX: "-100px"},
+        { translateX: "-898px"},
         { duration: 0 });
 
     element.find('li').each(function() {
