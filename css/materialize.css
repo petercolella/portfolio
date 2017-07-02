@@ -9123,7 +9123,7 @@ z-index: 9999;
 }
 
 .img-container:hover .project-image {
-  opacity: 0.67;
+  opacity: 0.33;
 }
 
 .img-container:hover .middle {
