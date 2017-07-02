@@ -9093,7 +9093,12 @@ z-index: 9999;
 }
 
 #projects-title {
-  background-image: url("../images/gears.gif");
+  background:
+  linear-gradient(
+    rgba(255, 255, 255, 0), 
+    rgba(255, 255, 255, 1)
+    ), 
+  url("../images/gears.gif");
   background-size: cover;
   color: white;
 }
