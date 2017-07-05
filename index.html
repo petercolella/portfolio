@@ -26,9 +26,9 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="index.html">Welcome</a></li>
-          <li><a href="index.html#about-link">About Me</a></li>
-          <li><a href="index.html#projects-link">Projects</a></li>
-          <li><a href="index.html#awards-link">Awards</a></li>
+          <li><a href="#about-link">About Me</a></li>
+          <li><a href="#projects-link">Projects</a></li>
+          <li><a href="#awards-link">Awards</a></li>
           <li><a href="#resume">Resume</a></li>
         </ul>
       </div>
@@ -36,37 +36,41 @@
   </div>
     <ul class="side-nav" id="mobile-demo">
       <li><a href="index.html">Welcome</a></li>
-      <li><a href="index.html#about-link">About Me</a></li>
-      <li><a href="index.html#projects-link">Projects</a></li>
-      <li><a href="index.html#awards-link">Awards</a></li>
+      <li><a href="#about-link">About Me</a></li>
+      <li><a href="#projects-link">Projects</a></li>
+      <li><a href="#awards-link">Awards</a></li>
       <li><a href="#resume">Resume</a></li>
     </ul>
 </header>
 <main>
-  <div class="slider">
-    <ul class="slides" style="text-shadow: 1px 1px black;">
-      <li>
-        <img src="./images/chef-fire.jpg" alt="chef-fire">
-        <div class="caption left-align">
-          <h2>The Restaurant Industry</h2>
-          <h4 class="light grey-text text-lighten-3">Brought me to Atlanta.</h4>
-        </div>
-      </li>
-      <li>
-        <img src="./images/atlanta_skyline_2.jpg" alt="atlanta">
-        <div class="caption center-align">
-          <h2>Atlanta</h2>
-          <h4 class="light grey-text text-lighten-3">Took me to General Assembly.</h4>
-        </div>
-      </li>
-      <li>
-        <img src="./images/ga-atlanta.jpg" alt="ga-atlanta">
-        <div class="caption right-align">
-          <h2>General Assembly</h2>
-          <h4 class="light grey-text text-lighten-3">Has led us here.</h4>
-        </div>
-      </li>
-    </ul>
+  <div class="section no-pad scrollspy welcome" id="welcome-link">
+
+    <div class="slider">
+      <ul class="slides" style="text-shadow: 1px 1px black;">
+        <li>
+          <img src="./images/chef-fire.jpg" alt="chef-fire">
+          <div class="caption left-align">
+            <h2>The Restaurant Industry</h2>
+            <h4 class="light grey-text text-lighten-3">Brought me to Atlanta.</h4>
+          </div>
+        </li>
+        <li>
+          <img src="./images/atlanta_skyline_2.jpg" alt="atlanta">
+          <div class="caption center-align">
+            <h2>Atlanta</h2>
+            <h4 class="light grey-text text-lighten-3">Took me to General Assembly.</h4>
+          </div>
+        </li>
+        <li>
+          <img src="./images/ga-atlanta.jpg" alt="ga-atlanta">
+          <div class="caption right-align">
+            <h2>General Assembly</h2>
+            <h4 class="light grey-text text-lighten-3">Has led us here.</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+
   </div>
   
   <!-- <div class="section about" id="about-link">
@@ -89,7 +93,7 @@
   </div>
   </div> -->
 
-  <div class="section about" id="about-link">
+  <div class="section scrollspy about" id="about-link">
 
   <div class="container">
     <div class="row">
@@ -143,7 +147,7 @@
   
   
 
-  <div class="section projects" id="projects-link">
+  <div class="section projects scrollspy" id="projects-link">
 
   <div class="container">
     <div class="row">
@@ -390,7 +394,7 @@
     <div class="parallax"><img src="./images/awards2.png"></div>
   </div>
   
-  <div class="section awards" id="awards-link">
+  <div class="section awards scrollspy" id="awards-link">
 
   <div class="container">
     <div class="row">
@@ -468,12 +472,15 @@
 <script type="text/javascript">
   $(document).ready(function(){
   $('.slider').slider( {
-    interval:2000
+    interval: 2000
   });
   $(".button-collapse").sideNav();
   });
   $('.modal').modal();
   $('.parallax').parallax();
+  $('.scrollspy').scrollSpy( {
+    scrollOffset: 0
+  });
 </script>
 <script type="text/javascript">
   var options = [
@@ -483,13 +490,13 @@
       // {selector: '#staggered-test', offset: 205, callback: function(el) {
       //   Materialize.toast("Please continue scrolling!", 1500 );
       // } },
-      {selector: '#staggered-list1', offset: 400, callback: function(el) {
+      {selector: '#staggered-list1', offset: 300, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
-      {selector: '#staggered-list2', offset: 400, callback: function(el) {
+      {selector: '#staggered-list2', offset: 300, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
-      {selector: '#staggered-list3', offset: 400, callback: function(el) {
+      {selector: '#staggered-list3', offset: 300, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
       {selector: '#about', offset: 200, callback: function(el) {
@@ -501,9 +508,9 @@
       // {selector: '#about-text', offset: 300, callback: function(el) {
       //   Materialize.fadeInImage($(el));
       // } },
-      {selector: '#projects', offset: 200, callback: function(el) {
-        Materialize.fadeInImage($(el));
-      } },
+      // {selector: '#projects', offset: 200, callback: function(el) {
+      //   Materialize.fadeInImage($(el));
+      // } },
       {selector: '#awards', offset: 200, callback: function(el) {
         Materialize.fadeInImage($(el));
       } }

@@ -8957,6 +8957,14 @@ body {
   flex-direction: column;
 }
 
+nav div ul li a.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul li a.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -9032,6 +9040,10 @@ span.website:hover {
 .slider .indicators {
 z-index: 9999;
 /*bottom: 0px;*/
+}
+
+#welcome-link {
+  top: 64px;
 }
 
 #about-text {
