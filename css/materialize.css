@@ -8958,7 +8958,7 @@ body {
 }
 
 nav div ul li a.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 ul li a.active {
