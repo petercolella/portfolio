@@ -9201,6 +9201,10 @@ z-index: 9999;
   /*opacity: 1.0 !important;*/
 }
 
+#halign-wrapper {
+  width: 100%;
+}
+
 .section-title {
   border-radius: 17px;
 }
