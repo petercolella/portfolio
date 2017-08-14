@@ -135,7 +135,6 @@ z-index: 9999;
 }
 
 .about {
-  background-color: rgba(0, 255, 255, 0.1);
   min-height: 100vh;
   position: relative;
   /*top: -64px;*/
@@ -173,7 +172,6 @@ z-index: 9999;
 }
 
 .projects {
-  background-color: rgba(0, 255, 255, 0.1);
   min-height: 100vh;
   position: relative;
 }
