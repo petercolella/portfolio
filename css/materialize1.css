@@ -146,7 +146,7 @@ z-index: 9999;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/white_matrix.gif");
+  /* background-image: url("../images/white_matrix.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -182,7 +182,7 @@ z-index: 9999;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/gears.gif");
+  /* background-image: url("../images/gears.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -253,7 +253,7 @@ z-index: 9999;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/confetti.gif");
+  /* background-image: url("../images/confetti.gif"); */
   background-repeat: no-repeat;
   background-size: cover; 
   width: 100%;
