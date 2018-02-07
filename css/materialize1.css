@@ -161,6 +161,18 @@ z-index: 9999;
   linear-gradient(
     rgba(25, 118, 210, 1), 
     rgba(25, 118, 210, 0)
+    );
+  /* url("../images/white_matrix.gif"); */
+  /*background-size: cover;*/
+  background-color: white;
+  color: white;
+}
+
+#about-title:hover {
+  background:
+  linear-gradient(
+    rgba(25, 118, 210, 1), 
+    rgba(25, 118, 210, 0)
     ), 
   url("../images/white_matrix.gif");
   /*background-size: cover;*/
@@ -192,6 +204,18 @@ z-index: 9999;
 }
 
 #projects-title {
+  background:
+  linear-gradient(
+    rgba(255, 255, 255, 0), 
+    rgba(255, 255, 255, 1)
+    );
+  /* url("../images/gears.gif"); */
+  background-size: cover;
+  background-color: black;
+  color: white;
+}
+
+#projects-title:hover {
   background:
   linear-gradient(
     rgba(255, 255, 255, 0), 
@@ -263,6 +287,18 @@ z-index: 9999;
 }
 
 #awards-title {
+  background:
+  linear-gradient(
+    rgba(249, 168, 37, 1), 
+    rgba(249, 168, 37, 0)
+    );
+  /* url("../images/confetti.gif"); */
+  /*background-size: cover;*/
+  background-color: white;
+  color: white;
+}
+
+#awards-title:hover {
   background:
   linear-gradient(
     rgba(249, 168, 37, 1), 
