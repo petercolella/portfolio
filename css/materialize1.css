@@ -183,6 +183,14 @@ z-index: 9999;
   color: white;
 }
 
+#about-img {
+  padding-left: 0;
+}
+
+#about-job {
+  margin-bottom: 0;
+}
+
 #about-card-content {
   background-color: #424242;
   color: white;
