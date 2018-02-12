@@ -29,6 +29,10 @@ h2 {
   /*color: white;*/
 }
 
+.floated {
+  float: left;
+}
+
 .welcome {
   /*position: inherit;*/
   /*top: -64px;*/
@@ -180,7 +184,13 @@ z-index: 9999;
 }
 
 #about-card-content {
+  background-color: #424242;
   color: white;
+  clear: left;
+}
+
+.clear-left {
+  clear: left;
 }
 
 .projects {
