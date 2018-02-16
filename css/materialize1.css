@@ -223,17 +223,18 @@ z-index: 9999;
 #projects-title {
   background:
   linear-gradient(
-    rgba(255, 255, 255, 0), 
-    rgba(255, 255, 255, 1)
+    rgba(96, 189, 7, 1), 
+    rgba(146, 230, 3, 0)
     );
   /* url("../images/gears.gif"); */
   background-size: cover;
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 
 #projects-text {
   background: url("../images/gears.gif");
+  background-size: 33%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
