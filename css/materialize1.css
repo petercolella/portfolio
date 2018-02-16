@@ -168,19 +168,27 @@ z-index: 9999;
     );
   /* url("../images/white_matrix.gif"); */
   /*background-size: cover;*/
-  background-color: white;
-  color: white;
+  /* background-color: white; */
+  /* color: white; */
 }
 
-#about-title:hover {
+/* #about-title:hover {
   background:
   linear-gradient(
     rgba(25, 118, 210, 1), 
     rgba(25, 118, 210, 0)
     ), 
   url("../images/white_matrix.gif");
-  /*background-size: cover;*/
   color: white;
+} */
+
+#about-text {
+  margin: 0 auto;
+  background: url("../images/white_matrix.gif");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 #about-img {
