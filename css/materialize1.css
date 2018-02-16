@@ -232,15 +232,12 @@ z-index: 9999;
   color: white;
 }
 
-#projects-title:hover {
-  background:
-  linear-gradient(
-    rgba(255, 255, 255, 0), 
-    rgba(255, 255, 255, 1)
-    ), 
-  url("../images/gears.gif");
-  background-size: cover;
-  color: white;
+#projects-text {
+  background: url("../images/gears.gif");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .img-container {
@@ -315,15 +312,12 @@ z-index: 9999;
   color: white;
 }
 
-#awards-title:hover {
-  background:
-  linear-gradient(
-    rgba(255, 160, 0, 1), 
-    rgba(249, 168, 37, 0)
-    ), 
-  url("../images/confetti.gif");
-  /*background-size: cover;*/
-  color: white;
+#awards-text {
+  background: url("../images/confetti.gif");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .resume {
