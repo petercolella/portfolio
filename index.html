@@ -154,7 +154,7 @@
   
 
   <ul id="staggered-list1">
-    <li style="opacity: 0;">
+    <li style="opacity: 0; transform:translateX(-150%)">
       <div class="row">
 
         <div class="col s12 m5 offset-m1" id="project1">
@@ -202,7 +202,7 @@
 
     </ul><ul id="staggered-list2">
 
-    <li style="opacity: 0;">
+    <li style="opacity: 0; transform:translateX(150%)">
       <div class="row">
 
         <div class="col s12 m5 offset-m1">
@@ -250,7 +250,7 @@
 
     </ul><ul id="staggered-list3">
 
-    <li style="opacity: 0;">
+    <li style="opacity: 0; transform:translateX(-150%)">
       <div class="row">
 
         <div class="col s12 m5 offset-m1">
@@ -404,13 +404,13 @@
 </script>
 <script type="text/javascript">
   var options = [
-      {selector: '#staggered-list1', offset: 300, callback: function(el) {
+      {selector: '#staggered-list1', offset: 100, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
-      {selector: '#staggered-list2', offset: 300, callback: function(el) {
+      {selector: '#staggered-list2', offset: 100, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
-      {selector: '#staggered-list3', offset: 300, callback: function(el) {
+      {selector: '#staggered-list3', offset: 100, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
       {selector: '#about', offset: 200, callback: function(el) {

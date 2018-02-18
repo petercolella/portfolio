@@ -376,7 +376,16 @@ z-index: 9999;
 }
 
 #staggered-list1 li {
-  background-color: red;
-  transition: all 1000ms !important;
-  transform: translateX(0px) !important;
+  /* background-color: red; */
+  transition: transform 1000ms ease !important;
+}
+
+#staggered-list2 li {
+  /* background-color: red; */
+  transition: transform 1000ms ease !important;
+}
+
+#staggered-list3 li {
+  /* background-color: red; */
+  transition: transform 1000ms ease !important;
 }
