@@ -234,12 +234,12 @@ z-index: 9999;
 }
 
 #projects-text {
-  background: url("../images/gears.gif");
-  background-size: contain;
+  background: url("../images/gears3.jpg") white;
+  background-size: auto 50%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.67);
+  -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
-  -moz-text-fill-color: rgba(255, 255, 255, 0.67);
+  -moz-text-fill-color: transparent;
 }
 
 .img-container {
