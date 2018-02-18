@@ -170,12 +170,13 @@ z-index: 9999;
     );
   /* url("../images/white_matrix.gif"); */
   /*background-size: cover;*/
-  /* background-color: white; */
-  /* color: white; */
+  background-color: white;
+  color: white;
 }
 
 #about-text {
   background: url("../images/white_matrix.gif");
+  background-size: contain;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -227,16 +228,16 @@ z-index: 9999;
     rgba(255, 255, 255, 1)
     );
   /* url("../images/gears.gif"); */
-  background-size: cover;
-  /* background-color: black; */
+  /* background-size: cover; */
+  background-color: white;
   color: white;
 }
 
 #projects-text {
   background: url("../images/gears.gif");
-  background-size: 33%;
+  background-size: contain;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.67);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
@@ -315,6 +316,7 @@ z-index: 9999;
 
 #awards-text {
   background: url("../images/confetti.gif");
+  background-size: contain;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
