@@ -26,18 +26,18 @@ span {
     margin-right: 10px;
 }
 
-h2 {
-  /*color: white;*/
-}
+/* h2 {
+  color: white;
+} */
 
 .floated {
   float: left;
 }
 
-.welcome {
-  /*position: inherit;*/
-  /*top: -64px;*/
-}
+/* .welcome {
+  position: inherit;
+  top: -64px;
+} */
 
 .slider {
   height: 100vh !important;
@@ -131,9 +131,9 @@ span.website:hover {
 z-index: 9999;
 }*/
 
-#welcome-link {
-  /*top: 64px;*/
-}
+/* #welcome-link {
+  top: 64px;
+} */
 
 .title-text {
   font-size: 7vw;
@@ -178,6 +178,7 @@ z-index: 9999;
 #about-text {
   background: url("../images/white_matrix.gif");
   background-size: contain;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -238,6 +239,7 @@ z-index: 9999;
 #projects-text {
   background: url("../images/gears3.jpg") white;
   background-size: auto 50%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -319,6 +321,7 @@ z-index: 9999;
 #awards-text {
   background: url("../images/confetti.gif");
   background-size: contain;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -334,21 +337,21 @@ z-index: 9999;
   color: black;
 }
 
-.parallax-container {
-  /*opacity: 0.5;*/
-}
+/* .parallax-container {
+  opacity: 0.5;
+} */
 
-.parallax-container:hover {
-  /*opacity: 1.0 !important;*/
-}
+/* .parallax-container:hover {
+  opacity: 1.0 !important;
+} */
 
 #halign-wrapper {
   width: 100%;
 }
 
-.section-title {
-  /* border-radius: 17px; */
-}
+/* .section-title {
+  border-radius: 17px;
+} */
 
 #quote {
   background-color: rgba(68, 68, 68, 0.67);
