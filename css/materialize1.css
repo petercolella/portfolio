@@ -353,7 +353,15 @@ z-index: 9999;
   border-radius: 17px;
 } */
 
-#quote {
+.quote-row {
+  margin-bottom: 0 !important;
+}
+
+h4.quote {
+  margin: auto !important;
+}
+
+.quote {
   background-color: rgba(68, 68, 68, 0.67);
   border-radius: 90px;
   color: white;
