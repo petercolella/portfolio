@@ -162,8 +162,8 @@
       </div>
 
 
-      <ul id="staggered-list1">
-        <li style="opacity: 0; transform:translateX(-150%)">
+      <ul id="staggered-list1" style="opacity: 0;">
+        <li>
           <div class="row">
 
             <div class="col s12 m5 offset-m1" id="project1">
@@ -215,9 +215,9 @@
         </li>
 
       </ul>
-      <ul id="staggered-list2">
+      <ul id="staggered-list2" style="opacity: 0;">
 
-        <li style="opacity: 0; transform:translateX(150%)">
+        <li>
           <div class="row">
 
             <div class="col s12 m5 offset-m1">
@@ -270,9 +270,10 @@
         </li>
 
       </ul>
-      <ul id="staggered-list3">
+      <ul id="staggered-list3" style="opacity: 0;">
 
-        <li style="opacity: 0; transform:translateX(-150%)">
+        <!-- <li style="opacity: 0; transform:translateX(-150%)"> -->
+        <li>
           <div class="row">
 
             <div class="col s12 m5 offset-m1">
@@ -444,17 +445,17 @@
     var options = [
       {
         selector: '#staggered-list1', offset: 100, callback: function ( el ) {
-          Materialize.showStaggeredList( $( el ) );
+          Materialize.fadeInImage( $( el ) );
         }
       },
       {
         selector: '#staggered-list2', offset: 100, callback: function ( el ) {
-          Materialize.showStaggeredList( $( el ) );
+          Materialize.fadeInImage( $( el ) );
         }
       },
       {
         selector: '#staggered-list3', offset: 100, callback: function ( el ) {
-          Materialize.showStaggeredList( $( el ) );
+          Materialize.fadeInImage( $( el ) );
         }
       },
       {
