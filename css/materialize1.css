@@ -190,11 +190,12 @@ z-index: 9999;
 
 #about-job {
   margin-bottom: 0;
+  background-color: #1976D2;
 }
 
 #about-card-content {
-  background-color: #424242;
-  color: white;
+  /* background-color: #424242; */
+  color: #454545;
   clear: left;
 }
 
@@ -373,7 +374,7 @@ z-index: 9999;
 
 .bkgrd-col {
   /* background-color: rgba(91, 64, 64, 0.67); */
-  background-color: #eeeeee;
+  background-color: #fafafa;
 }
 
 #staggered-list1 li {
