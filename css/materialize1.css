@@ -194,27 +194,6 @@ span {
   color: #db3236;
 }
 
-/* span.website:hover {
-  color: orange;
-} */
-
-/* .brand-logo:hover {
-  color: orange;
-} */
-
-/*.slider, .slides {
-  height: 100vh !important;
-  top: -64px;
-}
-
-.slider .indicators {
-z-index: 9999;
-}*/
-
-/* #welcome-link {
-  top: 64px;
-} */
-
 .title-text {
   font-size: 6vw;
   font-weight: 900;
@@ -227,20 +206,9 @@ z-index: 9999;
   /*top: -64px;*/
 }
 
-.about:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* background-image: url("../images/white_matrix.gif"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: calc(100% + 64px);
-  opacity: 0.1;
-  z-index: -1;
-  /*top: -64px;*/
+#about-card {
+  max-height: calc((100vh * 653 / 926) - 63px);
+  overflow: auto;
 }
 
 #about-title {
@@ -260,7 +228,9 @@ z-index: 9999;
 }
 
 #about-img {
+  /* top: 0; */
   padding-left: 0;
+  /* max-height: calc((100vh * 436 / 926) + 7px); */
 }
 
 #about-job {
@@ -289,21 +259,6 @@ z-index: 9999;
 .projects {
   min-height: 100vh;
   position: relative;
-}
-
-.projects:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* background-image: url("../images/gears.gif"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  z-index: -1;
 }
 
 #projects-title {
@@ -367,21 +322,6 @@ z-index: 9999;
 .awards {
   min-height: 100vh;
   position: relative;
-}
-
-.awards:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* background-image: url("../images/confetti.gif"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  z-index: -1;
 }
 
 #awards-title {

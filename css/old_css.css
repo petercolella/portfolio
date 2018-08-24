@@ -1,0 +1,67 @@
+span.website:hover {
+    color: orange;
+}
+
+.brand-logo:hover {
+    color: orange;
+}
+
+.slider,
+.slides {
+    height: 100vh !important;
+    top: -64px;
+}
+
+.slider .indicators {
+    z-index: 9999;
+}
+
+#welcome-link {
+    top: 64px;
+}
+
+.about:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/white_matrix.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% + 64px);
+    opacity: 0.1;
+    z-index: -1;
+    top: -64px;
+}
+
+.projects:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: url("../images/gears.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.awards:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: url("../images/confetti.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
