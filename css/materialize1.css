@@ -29,7 +29,7 @@ ul li a.active {
 
 .menu_link {
   display: block;
-  height: 64px;
+  max-height: 64px;
 }
 
 nav ul a:hover {
@@ -188,9 +188,9 @@ span {
   color: #db3236;
 }
 
-span.website:hover {
+/* span.website:hover {
   color: orange;
-}
+} */
 
 /* .brand-logo:hover {
   color: orange;
