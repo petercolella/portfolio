@@ -227,14 +227,31 @@ span {
   -moz-text-fill-color: transparent;
 }
 
-#about-img {
+#about-img,
+#about-img-small {
   /* top: 0; */
   padding-left: 0;
   /* max-height: calc((100vh * 436 / 926) + 7px); */
+  width: auto;
+}
+
+#about-img .card-image img {
+  max-width: 25vw;
+  height: auto;
 }
 
 #about-job {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  background-color: #1976D2;
+  background: linear-gradient(to right, #808080, #bcbcbc, #c4c4c4, #E6E6E4, #dddddd, #a1a1a1, #7f7f7f);
+  color: #454545;
+  text-shadow: hsla(0, 0%, 40%, .5) 0 -1px 0, hsla(0, 0%, 100%, .6) 0 2px 1px;
+  text-align: center;
+  max-width: 25vw;
+  padding: 12px 0 !important;
+}
+
+#about-job-small {
   background-color: #1976D2;
   background: linear-gradient(to right, #808080, #bcbcbc, #c4c4c4, #E6E6E4, #dddddd, #a1a1a1, #7f7f7f);
   color: #454545;
@@ -243,6 +260,12 @@ span {
 }
 
 #about-span {
+  font-size: 1.25em;
+  margin-left: 10px;
+}
+
+#about-span-small,
+#about-span-med {
   margin-left: 10px;
 }
 
