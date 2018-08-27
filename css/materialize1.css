@@ -206,11 +206,6 @@ span {
   /*top: -64px;*/
 }
 
-#about-card {
-  max-height: calc((100vh * 653 / 926) - 63px);
-  overflow: auto;
-}
-
 #about-title {
   background: linear-gradient(to right, rgba(250, 250, 250, 1), transparent 15%, transparent 85%, rgba(250, 250, 250, 1)), linear-gradient( rgba(250, 250, 250, 1), rgba(25, 118, 210, 1), rgba(250, 250, 250, 1));
   /* url("../images/white_matrix.gif"); */
@@ -237,6 +232,11 @@ span {
 
 #about-img .card-image img {
   max-width: 25vw;
+  height: auto;
+}
+
+#about-img .card-image img.materialboxed.initialized.active {
+  max-width: 100vw;
   height: auto;
 }
 
@@ -269,8 +269,16 @@ span {
   margin-left: 10px;
 }
 
+#about-card {
+  max-height: calc((100vh * 653 / 926) - 63px);
+  overflow: auto;
+}
+
 #about-card-content {
-  /* background-color: #424242; */
+  text-overflow: ellipsis;
+}
+
+#about-card-text {
   color: #454545;
   clear: left;
 }
