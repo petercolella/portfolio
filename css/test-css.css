@@ -222,6 +222,10 @@ body {
   #about-img-row {
       position: relative;
   }
+
+  #about-img {
+      position: sticky;
+  }
   
   #about-img,
   #about-img-small {
@@ -231,7 +235,7 @@ body {
     /* max-height: calc((100vh * 436 / 926) + 7px); */
     width: auto;
     position: -webkit-sticky;
-    position: sticky;
+    /* position: sticky; */
   }
   
   #about-img .card-image img {
