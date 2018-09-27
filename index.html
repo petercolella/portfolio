@@ -599,7 +599,7 @@
           <div class="col s12">
             <div class="card hoverable" id="awards" style="opacity: 0;">
               <div class="card-image" id="awards-card-img">
-                <img class="materialboxed" id="awards-img" data-caption="I cannot express how fortunate I was to learn and work with this amazing group of people."
+                <img class="materialboxed" id="awards-img" data-caption="I cannot express how fortunate I was to learn and work with these amazing people."
                   src="./images/angelhack.jpg">
                 <span class="card-title" id="awards-card-title">AngelHack Global Hackathon Series: Atlanta, May 20 2017</span>
               </div>
@@ -684,56 +684,56 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
   <script type="text/javascript">
-    $( document ).ready( function () {
-      $( '.slider' ).slider( {
+    $(document).ready(function() {
+      $('.slider').slider({
         interval: 2000
-      } );
-      $( ".button-collapse" ).sideNav();
-    } );
-    $( '.modal' ).modal();
-    $( '.parallax' ).parallax();
-    $( '.scrollspy' ).scrollSpy( {
+      });
+      $(".button-collapse").sideNav();
+    });
+    $('.modal').modal();
+    $('.parallax').parallax();
+    $('.scrollspy').scrollSpy({
       scrollOffset: 0
-    } );
+    });
   </script>
   <script type="text/javascript">
-    var options = [ {
-        selector: '#staggered-list1',
-        offset: 100,
-        callback: function ( el ) {
-          Materialize.fadeInImage( $( el ) );
-        }
-      },
-      {
-        selector: '#staggered-list2',
-        offset: 100,
-        callback: function ( el ) {
-          Materialize.fadeInImage( $( el ) );
-        }
-      },
-      {
-        selector: '#staggered-list3',
-        offset: 100,
-        callback: function ( el ) {
-          Materialize.fadeInImage( $( el ) );
-        }
-      },
-      {
-        selector: '#about',
-        offset: 200,
-        callback: function ( el ) {
-          Materialize.fadeInImage( $( el ) );
-        }
-      },
-      {
-        selector: '#awards',
-        offset: 200,
-        callback: function ( el ) {
-          Materialize.fadeInImage( $( el ) );
-        }
+    var options = [{
+      selector: '#staggered-list1',
+      offset: 100,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
       }
+    },
+    {
+      selector: '#staggered-list2',
+      offset: 100,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    },
+    {
+      selector: '#staggered-list3',
+      offset: 100,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    },
+    {
+      selector: '#about',
+      offset: 200,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    },
+    {
+      selector: '#awards',
+      offset: 200,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    }
     ];
-    Materialize.scrollFire( options );
+    Materialize.scrollFire(options);
   </script>
 </body>
 
