@@ -7,7 +7,7 @@ body {
 
 br {
   display: block;
-  content: "";
+  content: '';
   margin-top: 1rem;
 }
 
@@ -61,14 +61,14 @@ nav ul a:hover {
   display: inline-block;
   position: relative;
   margin-right: 0;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .menu_word_side {
   display: inline-block;
   position: relative;
   margin-right: 0;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .menu_word:before {
@@ -141,11 +141,11 @@ span {
 
 .fa-github {
   padding-left: 5px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fa-github:hover {
@@ -154,11 +154,11 @@ span {
 
 .fa-linkedin {
   padding-left: 5px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fa-linkedin:hover {
@@ -167,11 +167,11 @@ span {
 
 .fa-twitter {
   padding-left: 5px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fa-twitter:hover {
@@ -180,11 +180,11 @@ span {
 
 .fa-envelope-o {
   padding-left: 5px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .fa-envelope-o:hover {
@@ -204,13 +204,24 @@ span {
 }
 
 #about-title {
-  background: linear-gradient(to right, rgba(250, 250, 250, 1), transparent 15%, transparent 85%, rgba(250, 250, 250, 1)), linear-gradient(rgba(250, 250, 250, 1), rgba(25, 118, 210, 1), rgba(250, 250, 250, 1));
+  background: linear-gradient(
+      to right,
+      rgba(250, 250, 250, 1),
+      transparent 15%,
+      transparent 85%,
+      rgba(250, 250, 250, 1)
+    ),
+    linear-gradient(
+      rgba(250, 250, 250, 1),
+      rgba(25, 118, 210, 1),
+      rgba(250, 250, 250, 1)
+    );
   /* url("../images/white_matrix.gif"); */
   /*background-size: cover;*/
 }
 
 #about-text {
-  background: url("../images/white_matrix.gif");
+  background: url('../images/white_matrix.gif');
   background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
@@ -239,20 +250,38 @@ span {
 
 #about-job {
   margin-bottom: 0.25rem;
-  background-color: #1976D2;
-  background: linear-gradient(to right, #808080, #bcbcbc, #c4c4c4, #E6E6E4, #dddddd, #a1a1a1, #7f7f7f);
+  background-color: #1976d2;
+  background: linear-gradient(
+    to right,
+    #808080,
+    #bcbcbc,
+    #c4c4c4,
+    #e6e6e4,
+    #dddddd,
+    #a1a1a1,
+    #7f7f7f
+  );
   color: #454545;
-  text-shadow: hsla(0, 0%, 40%, .5) 0 -1px 0, hsla(0, 0%, 100%, .6) 0 2px 1px;
+  text-shadow: hsla(0, 0%, 40%, 0.5) 0 -1px 0, hsla(0, 0%, 100%, 0.6) 0 2px 1px;
   text-align: center;
   max-width: 25vw;
   padding: 12px 0 !important;
 }
 
 #about-job-small {
-  background-color: #1976D2;
-  background: linear-gradient(to right, #808080, #bcbcbc, #c4c4c4, #E6E6E4, #dddddd, #a1a1a1, #7f7f7f);
+  background-color: #1976d2;
+  background: linear-gradient(
+    to right,
+    #808080,
+    #bcbcbc,
+    #c4c4c4,
+    #e6e6e4,
+    #dddddd,
+    #a1a1a1,
+    #7f7f7f
+  );
   color: #454545;
-  text-shadow: hsla(0, 0%, 40%, .5) 0 -1px 0, hsla(0, 0%, 100%, .6) 0 2px 1px;
+  text-shadow: hsla(0, 0%, 40%, 0.5) 0 -1px 0, hsla(0, 0%, 100%, 0.6) 0 2px 1px;
   text-align: center;
 }
 
@@ -267,7 +296,7 @@ span {
 }
 
 #about-card {
-  max-height: calc((100vh * 653 / 926) - 63px);
+  /* max-height: calc((100vh * 653 / 926) - 63px); */
   overflow: auto;
 }
 
@@ -290,7 +319,18 @@ span {
 }
 
 #projects-title {
-  background: linear-gradient(to right, rgba(250, 250, 250, 1), transparent 15%, transparent 85%, rgba(250, 250, 250, 1)), linear-gradient(rgba(250, 250, 250, 1), rgba(96, 189, 7, 1), rgba(250, 250, 250, 1));
+  background: linear-gradient(
+      to right,
+      rgba(250, 250, 250, 1),
+      transparent 15%,
+      transparent 85%,
+      rgba(250, 250, 250, 1)
+    ),
+    linear-gradient(
+      rgba(250, 250, 250, 1),
+      rgba(96, 189, 7, 1),
+      rgba(250, 250, 250, 1)
+    );
   /* url("../images/gears.gif"); */
   /* background-size: cover; */
   background-color: white;
@@ -298,7 +338,7 @@ span {
 }
 
 #projects-text {
-  background: url("../images/gears3.jpg") white;
+  background: url('../images/gears3.jpg') white;
   background-size: auto 50%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -317,18 +357,18 @@ span {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 .img-container:hover .project-image {
@@ -340,7 +380,7 @@ span {
 }
 
 .project-hover-text {
-  background-color: #0099CC;
+  background-color: #0099cc;
   border-radius: 8px;
   color: white;
   /*font-size: 16px;*/
@@ -367,15 +407,23 @@ span {
 }
 
 #awards-card-title {
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
 
 #awards-title {
-  background: linear-gradient(to right, rgba(250, 250, 250, 1), transparent 15%, transparent 85%, rgba(250, 250, 250, 1)), linear-gradient(rgba(250, 250, 250, 1), rgba(255, 160, 0, 1), rgba(250, 250, 250, 1));
+  background: linear-gradient(
+      to right,
+      rgba(250, 250, 250, 1),
+      transparent 15%,
+      transparent 85%,
+      rgba(250, 250, 250, 1)
+    ),
+    linear-gradient(
+      rgba(250, 250, 250, 1),
+      rgba(255, 160, 0, 1),
+      rgba(250, 250, 250, 1)
+    );
   /* url("../images/confetti.gif"); */
   /*background-size: cover;*/
   /* background-color: white; */
@@ -383,7 +431,7 @@ span {
 }
 
 #awards-text {
-  background: url("../images/confetti.gif");
+  background: url('../images/confetti.gif');
   background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
