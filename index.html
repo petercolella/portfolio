@@ -1,711 +1,829 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Peter Colella - Web Developer</title>
+    <meta
+      name="description"
+      content="The Personal Domain of Peter Colella, Web Developer in Atlanta, GA"
+    />
+    <meta
+      name="keywords"
+      content="Peter Colella, Web Developer, Atlanta, General Assembly, Graduate, Candidate"
+    />
+    <link rel="icon" href="./images/icon.png" />
+    <!--Import Google Icon Font-->
+    <link
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/materialize1.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Peter Colella - Web Developer</title>
-  <meta name="description" content="The Personal Domain of Peter Colella, Web Developer in Atlanta, GA">
-  <meta name="keywords" content="Peter Colella, Web Developer, Atlanta, General Assembly, Graduate, Candidate">
-  <link rel="icon" href="./images/icon.png">
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-  <link rel='stylesheet' href='css/materialize1.css' />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-  <header>
-    <div class="navbar-fixed">
-      <nav style="opacity: 0.75;">
-        <div class="nav-wrapper grey darken-3">
-          <div class="menu_item">
-            <a href="index.html" class="brand-logo right menu_link">
-              <span class="menu_title">
-                <span class="menu_word" data-hover="Peter Colella">Peter Colella</span>
-              </span>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav style="opacity: 0.75;">
+          <div class="nav-wrapper grey darken-3">
+            <div class="menu_item">
+              <a href="index.html" class="brand-logo right menu_link">
+                <span class="menu_title">
+                  <span class="menu_word" data-hover="Peter Colella"
+                    >Peter Colella</span
+                  >
+                </span>
+              </a>
+            </div>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+              <i class="material-icons">menu</i>
             </a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down menu">
+              <li class="menu_item">
+                <a href="#welcome-link" class="menu_link">
+                  <span class="menu_title">
+                    <span class="menu_word" data-hover="Welcome">Welcome</span>
+                  </span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="#about-link" class="menu_link">
+                  <span class="menu_title">
+                    <span class="menu_word" data-hover="About Me"
+                      >About Me</span
+                    >
+                  </span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="#projects-link" class="menu_link">
+                  <span class="menu_title">
+                    <span class="menu_word" data-hover="Projects"
+                      >Projects</span
+                    >
+                  </span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="#awards-link" class="menu_link">
+                  <span class="menu_title">
+                    <span class="menu_word" data-hover="Awards">Awards</span>
+                  </span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="#resume" class="menu_link">
+                  <span class="menu_title">
+                    <span class="menu_word" data-hover="Resume">Resume</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
+        </nav>
+      </div>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="#welcome-link" class="menu_link">
+            <span class="menu_title">
+              <span class="menu_word_side" data-hover="Welcome">Welcome</span>
+            </span>
           </a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down menu">
-            <li class="menu_item">
-              <a href="#welcome-link" class="menu_link">
-                <span class="menu_title">
-                  <span class="menu_word" data-hover="Welcome">Welcome</span>
-                </span>
+        </li>
+        <li>
+          <a href="#about-link" class="menu_link">
+            <span class="menu_title">
+              <span class="menu_word_side" data-hover="About Me">About Me</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects-link" class="menu_link">
+            <span class="menu_title">
+              <span class="menu_word_side" data-hover="Projects">Projects</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#awards-link" class="menu_link">
+            <span class="menu_title">
+              <span class="menu_word_side" data-hover="Awards">Awards</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="menu_link">
+            <span class="menu_title">
+              <span class="menu_word_side" data-hover="Resume">Resume</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="section no-pad scrollspy welcome" id="welcome-link">
+        <div class="slider">
+          <ul class="slides" style="text-shadow: 1px 1px black;">
+            <li>
+              <img src="./images/chef-fire.jpg" alt="chef-fire" />
+              <div class="caption left-align">
+                <h2>The Restaurant Industry</h2>
+                <h4 class="light grey-text text-lighten-3">
+                  Brought me to Atlanta.
+                </h4>
+              </div>
+            </li>
+            <li>
+              <img src="./images/atlanta_skyline_2.jpg" alt="atlanta" />
+              <div class="caption center-align">
+                <h2>Atlanta</h2>
+                <h4 class="light grey-text text-lighten-3">
+                  Introduced me to coding.
+                </h4>
+              </div>
+            </li>
+            <li>
+              <img src="./images/ga-atlanta.jpg" alt="ga-atlanta" />
+              <div class="caption right-align">
+                <h2>Coding</h2>
+                <h4 class="light grey-text text-lighten-3">Has led us here.</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section scrollspy about bkgrd-col" id="about-link">
+        <div class="container scrollspy-margin">
+          <div class="row">
+            <div class="col s8 offset-s2">
+              <div class="card-panel section-title z-depth-0" id="about-title">
+                <h1 class="center title-text" id="about-text">About Me</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="about" style="opacity: 0;">
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div
+                  class="card-panel hoverable hide-on-small-only"
+                  id="about-card"
+                >
+                  <div class="row">
+                    <!-- <div class="card-panel grey darken-3">
+                    <div class="row"> -->
+
+                    <div class="col s12 m6 floated" id="about-img">
+                      <!-- <div class="card"> -->
+                      <div class="card-image">
+                        <img
+                          class="materialboxed"
+                          data-caption="Extreme Close-Up!"
+                          src="./images/DSC_0314.jpg"
+                        />
+                      </div>
+                      <!-- </div> -->
+                      <div class="card-panel" id="about-job">
+                        <span
+                          class="show-on-medium hide-on-large-only"
+                          id="about-span-med"
+                        >
+                          <b>Full Stack Web Developer</b>
+                        </span>
+                        <span
+                          class="flow-text show-on-large hide-on-med-only"
+                          id="about-span"
+                        >
+                          <b>Full Stack Web Developer</b>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div
+                      class="card-content no-padding"
+                      id="about-card-content"
+                    >
+                      <span class="flow-text" id="about-card-text"
+                        >My background is in the food service business. I began
+                        as a dishwasher and eventually became the owner-operator
+                        of my own restaurant franchise.
+                        <br />
+                        <br />The experience learning to code, while extremely
+                        daunting at times, has instilled in me a love of
+                        programming and a tremendous sense of accomplishment. I
+                        am left with the desire to be pushed further and add to
+                        my toolkit as I take on new challenges.
+                        <br />
+                        <br />I enjoy applying my extensive experience — focus
+                        on organization and structure, commitment to efficiency,
+                        leadership in solving problems with available resources,
+                        communication skills, team-oriented work ethic — and new
+                        coding knowledge to an exciting career in the tech
+                        industry.
+                      </span>
+                    </div>
+
+                    <!-- </div>
+                  </div> -->
+                  </div>
+                </div>
+                <div
+                  class="card-panel hoverable hide-on-med-and-up"
+                  id="about-card-small"
+                >
+                  <div class="row">
+                    <!-- <div class="card-panel grey darken-3">
+                    <div class="row"> -->
+
+                    <div class="col s12 m6 floated" id="about-img-small">
+                      <!-- <div class="card"> -->
+                      <div class="card-image">
+                        <img
+                          class="materialboxed"
+                          data-caption="Extreme Close-Up!"
+                          src="./images/DSC_0314.jpg"
+                        />
+                      </div>
+                      <!-- </div> -->
+                      <div class="card-panel" id="about-job-small">
+                        <span class="flow-text" id="about-span">
+                          <b>Full Stack Web Developer</b>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="card-content no-padding">
+                      <span class="flow-text" id="about-card-content"
+                        >My background is in the food service business. I began
+                        as a dishwasher and eventually became the owner-operator
+                        of my own restaurant franchise.
+                        <br />
+                        <br />The experience learning to code, while extremely
+                        daunting at times, has instilled in me a love of
+                        programming and a tremendous sense of accomplishment. I
+                        am left with the desire to be pushed further and add to
+                        my toolkit as I take on new challenges.
+                        <br />
+                        <br />I enjoy applying my extensive experience — focus
+                        on organization and structure, commitment to efficiency,
+                        leadership in solving problems with available resources,
+                        communication skills, team-oriented work ethic — and new
+                        coding knowledge to an exciting career in the tech
+                        industry.
+                      </span>
+                    </div>
+
+                    <!-- </div>
+                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="no-pad valign-wrapper" id="halign-wrapper">
+          <div class="container">
+            <div class="row quote-row">
+              <div class="col s12">
+                <h4 class="center-align quote">
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> Every
+                  great developer you know got there by solving problems they
+                  were unqualified to solve until they actually did it.
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  <br />
+                  <span class="light grey-text text-lighten-3"
+                    >- Patrick McKenzie</span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- yes that is a picture of my screen -->
+        <div class="parallax">
+          <img src="./images/projects2.jpg" />
+        </div>
+      </div>
+
+      <div class="section projects scrollspy bkgrd-col" id="projects-link">
+        <div class="container scrollspy-margin">
+          <div class="row">
+            <div class="col s8 offset-s2">
+              <div
+                class="card-panel section-title z-depth-0"
+                id="projects-title"
+              >
+                <h1 class="center title-text" id="projects-text">Projects</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul id="staggered-list1" style="opacity: 0;">
+          <li>
+            <div class="row">
+              <div class="col s12 m5 offset-m1" id="project1">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/connect-four-1.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >Connect Four
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://petercolella.github.io/Connect-Four-Game/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >Connect Four
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>Technologies: HTML, CSS, Javascript, jQuery</p>
+                    <p>
+                      Player One plays the black pieces and Player Two plays the
+                      red pieces. Player One begins by clicking on column of
+                      his/her choice. Pieces automatically move to the lowest
+                      available space in the selected column. The object of the
+                      game is to connect four of your checkers in a row
+                      horizontally, vertically, or diagonally. After a game has
+                      been won, the scoreboard is updated. The board is cleared
+                      by clicking the new game button.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m5">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/trigger-happy.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >Trigger Happy
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://asmr-trigger-happy.herokuapp.com/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >Trigger Happy
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>Technologies: MEN Stack, Handlebars</p>
+                    <p>
+                      This application allows users to share their favorite ASMR
+                      videos and provide specific information about the
+                      "Triggers" found in each one.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="staggered-list2" style="opacity: 0;">
+          <li>
+            <div class="row">
+              <div class="col s12 m5 offset-m1">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/imbible-1.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >Imbible
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://imbible3.herokuapp.com/#!/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >Imbible
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>Technologies: MEAN Stack, Bootstrap, Passport</p>
+                    <p>
+                      Imbible is an app that lets users submit whatever they
+                      have on hand to discover what classic cocktails they are
+                      able to craft with their limited resources. In addition, a
+                      user can add whatever concoction they came up with to our
+                      list of libations and have others review it.
+                    </p>
+                    <br />
+                    <p>
+                      We wanted to reintroduce our users to the storied world of
+                      mixology. In doing so, we hope that they gain a renewed
+                      appreciation of the art to making a good drink. Just as
+                      one eats not only to be nourished, but to enjoy the
+                      flavors created through the love of food, one should drink
+                      not to be intoxicated, but to experience a similar
+                      enjoyment. We made our app with hope that we could
+                      contribute to that enjoyment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m5">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/city-data-1.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >City Tips
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://city-tips.herokuapp.com/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >City Tips
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      Technologies: Ruby on Rails, Bootstrap, Devise, PostgreSQL
+                    </p>
+                    <p>
+                      This is a Ruby on Rails app where users can view and leave
+                      tips for their favorite cities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul id="staggered-list3" style="opacity: 0;">
+          <!-- <li style="opacity: 0; transform:translateX(-150%)"> -->
+          <li>
+            <div class="row">
+              <div class="col s12 m5 offset-m1">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/V.i.A.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >V.i.A
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://via-vendor-app.herokuapp.com/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >V.i.A
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      Technologies: Ruby on Rails, Materialize, Devise,
+                      PostgreSQL
+                    </p>
+                    <p>
+                      V.i.A is an app that provides user access to key
+                      information about a company or organization's approved
+                      vendors and purveyors. The app is especially applicable to
+                      the restaurant industry in which a wide array of vendors
+                      are dealt with on a daily basis. Additionally, the
+                      specific information for each vendor changes often and
+                      sometimes is not readily communicated from upper
+                      management to those who actually use the information.
+                    </p>
+                    <br />
+                    <p>
+                      With this app, users not only have access to vendor
+                      information. They can also call, email, link to the
+                      vendor's website, and get driving directions if it's
+                      necesssary to go to the vendor's location. In short, V.i.A
+                      keeps the user's resources organized and accessible.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m5">
+                <div class="card hoverable">
+                  <div
+                    class="card-image img-container waves-effect waves-block waves-light"
+                  >
+                    <img
+                      class="activator project-image"
+                      src="./images/maribelle.png"
+                    />
+                    <div class="middle">
+                      <div class="activator project-hover-text">
+                        <i class="small material-icons">info_outline</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content flow-text">
+                    <span class="card-title activator grey-text text-darken-4"
+                      >Belated Birthday Wish
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>
+                      <a
+                        target="_blank"
+                        href="https://petercolella.github.io/maribelle/"
+                      >
+                        <i class="small material-icons">open_in_new</i>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"
+                      >Belated Birthday Wish
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    <p>Technologies: Materialize, Animate.css, jQuery</p>
+                    <p>
+                      This is a simple landing page to wish my niece, Maribelle,
+                      a belated Happy Birthday.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="no-pad valign-wrapper" id="halign-wrapper">
+          <div class="container">
+            <div class="row quote-row">
+              <div class="col s12">
+                <h4 class="center-align quote">
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> Perfection
+                  is not attainable, but if we chase perfection we can catch
+                  excellence.
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  <br />
+                  <span class="light grey-text text-lighten-3"
+                    >- Vince Lombardi</span
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parallax">
+          <img src="./images/awards2.png" />
+        </div>
+      </div>
+
+      <div class="section awards scrollspy bkgrd-col" id="awards-link">
+        <div class="container scrollspy-margin">
+          <div class="row">
+            <div class="col s8 offset-s2">
+              <div class="card-panel section-title z-depth-0" id="awards-title">
+                <h1 class="center title-text" id="awards-text">Awards</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <div class="card hoverable" id="awards" style="opacity: 0;">
+                <div class="card-image" id="awards-card-img">
+                  <img
+                    class="materialboxed"
+                    id="awards-img"
+                    data-caption="I cannot express how fortunate I was to learn and work with these amazing people."
+                    src="./images/angelhack.jpg"
+                  />
+                  <span class="card-title" id="awards-card-title"
+                    >AngelHack Global Hackathon Series: Atlanta, May 20
+                    2017</span
+                  >
+                </div>
+                <div class="card-content">
+                  <p>Winner: Best Voice User Experience Using Amazon Alexa</p>
+                </div>
+                <div class="card-action">
+                  <a target="_blank" href="http://www.hackathon.io/job-hunt1"
+                    >Hackathon.io</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/petercolella/job-hunt-lambda-function/blob/master/lambda.js"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="resume">
+        <div class="modal-content" id="resume-content">
+          <h2 class="header center" id="resume-header">Resume</h2>
+          <!-- <div class="row">
+          <div class="col s12">
+            <div class="card"> -->
+          <!-- <div> -->
+          <object
+            class="resume"
+            data="./documents/PeterColellaResume.pdf"
+            type="application/pdf"
+          ></object>
+          <!-- </div> -->
+          <div class="modal-footer">
+            <a target="_blank" href="./documents/PeterColellaResume.pdf"
+              >Click Here to Open in New Tab</a
+            >
+          </div>
+          <!-- </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row center">
+          <ul style="display: inline-flex;">
+            <li>
+              <a
+                target="_blank"
+                class="grey-text text-lighten-3"
+                href="https://github.com/petercolella"
+              >
+                <i class="fa fa-github" style="font-size: 2em"></i>
               </a>
             </li>
-            <li class="menu_item">
-              <a href="#about-link" class="menu_link">
-                <span class="menu_title">
-                  <span class="menu_word" data-hover="About Me">About Me</span>
-                </span>
+            <span></span>
+            <li>
+              <a
+                target="_blank"
+                class="grey-text text-lighten-3"
+                href="https://www.linkedin.com/in/peter-colella/"
+              >
+                <i class="fa fa-linkedin" style="font-size: 2em"></i>
               </a>
             </li>
-            <li class="menu_item">
-              <a href="#projects-link" class="menu_link">
-                <span class="menu_title">
-                  <span class="menu_word" data-hover="Projects">Projects</span>
-                </span>
+            <span></span>
+            <li>
+              <a
+                target="_blank"
+                class="grey-text text-lighten-3"
+                href="https://twitter.com/_PeterColella"
+              >
+                <i class="fa fa-twitter" style="font-size: 2em"></i>
               </a>
             </li>
-            <li class="menu_item">
-              <a href="#awards-link" class="menu_link">
-                <span class="menu_title">
-                  <span class="menu_word" data-hover="Awards">Awards</span>
-                </span>
-              </a>
-            </li>
-            <li class="menu_item">
-              <a href="#resume" class="menu_link">
-                <span class="menu_title">
-                  <span class="menu_word" data-hover="Resume">Resume</span>
-                </span>
+            <span></span>
+            <li>
+              <a
+                target="_blank"
+                class="grey-text text-lighten-3"
+                href="mailto:colella.peter.j@gmail.com"
+              >
+                <i class="fa fa-envelope-o" style="font-size: 2em"></i>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-    <ul class="side-nav" id="mobile-demo">
-      <li>
-        <a href="#welcome-link" class="menu_link">
-          <span class="menu_title">
-            <span class="menu_word_side" data-hover="Welcome">Welcome</span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#about-link" class="menu_link">
-          <span class="menu_title">
-            <span class="menu_word_side" data-hover="About Me">About Me</span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#projects-link" class="menu_link">
-          <span class="menu_title">
-            <span class="menu_word_side" data-hover="Projects">Projects</span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#awards-link" class="menu_link">
-          <span class="menu_title">
-            <span class="menu_word_side" data-hover="Awards">Awards</span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#resume" class="menu_link">
-          <span class="menu_title">
-            <span class="menu_word_side" data-hover="Resume">Resume</span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <div class="section no-pad scrollspy welcome" id="welcome-link">
-
-      <div class="slider">
-        <ul class="slides" style="text-shadow: 1px 1px black;">
-          <li>
-            <img src="./images/chef-fire.jpg" alt="chef-fire">
-            <div class="caption left-align">
-              <h2>The Restaurant Industry</h2>
-              <h4 class="light grey-text text-lighten-3">Brought me to Atlanta.</h4>
-            </div>
-          </li>
-          <li>
-            <img src="./images/atlanta_skyline_2.jpg" alt="atlanta">
-            <div class="caption center-align">
-              <h2>Atlanta</h2>
-              <h4 class="light grey-text text-lighten-3">Introduced me to coding.</h4>
-            </div>
-          </li>
-          <li>
-            <img src="./images/ga-atlanta.jpg" alt="ga-atlanta">
-            <div class="caption right-align">
-              <h2>Coding</h2>
-              <h4 class="light grey-text text-lighten-3">Has led us here.</h4>
-            </div>
-          </li>
-        </ul>
       </div>
 
-    </div>
-
-    <div class="section scrollspy about bkgrd-col" id="about-link">
-
-      <div class="container scrollspy-margin">
-        <div class="row">
-          <div class="col s8 offset-s2">
-            <div class="card-panel section-title z-depth-0" id="about-title">
-              <h1 class="center title-text" id="about-text">About Me</h1>
-            </div>
-          </div>
+      <div class="footer-copyright">
+        <div class="container menu_item">
+          ©
+          <script type="text/JavaScript">
+            document.write(new Date().getFullYear());
+          </script>
+          Peter Colella
+          <a
+            target="_blank"
+            class="grey-text text-lighten-4 right menu_link"
+            href="http://www.petercolella.com/"
+          >
+            <span class="menu_title">
+              <span class="website menu_word" data-hover="petercolella.com"
+                >petercolella.com</span
+              >
+            </span>
+          </a>
         </div>
       </div>
-
-      <div class="container" id="about" style="opacity: 0;">
-        <div class="row">
-          <div class="col s12">
-            <div class="card">
-              <div class="card-panel hoverable hide-on-small-only" id="about-card">
-                <div class="row">
-                  <!-- <div class="card-panel grey darken-3">
-                    <div class="row"> -->
-
-                  <div class="col s12 m6 floated" id="about-img">
-                    <!-- <div class="card"> -->
-                    <div class="card-image">
-                      <img class="materialboxed" data-caption="Extreme Close-Up!" src="./images/DSC_0314.jpg">
-                    </div>
-                    <!-- </div> -->
-                    <div class="card-panel" id="about-job">
-                      <span class="show-on-medium hide-on-large-only" id="about-span-med">
-                        <b>Full Stack Web Developer</b>
-                      </span>
-                      <span class="flow-text show-on-large hide-on-med-only" id="about-span">
-                        <b>Full Stack Web Developer</b>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="card-content no-padding" id="about-card-content">
-                    <span class="flow-text" id="about-card-text">My background is in the food service business. I began
-                      as a dishwasher and eventually became the owner-operator
-                      of my own restaurant franchise.
-                      <br>
-                      <br>The experience learning to code, while extremely daunting at times, has instilled in me a
-                      love of programming
-                      and a tremendous sense of accomplishment. I am left with the desire to be pushed further and add
-                      to
-                      my toolkit as I take on new challenges.
-                      <br>
-                      <br>I enjoy applying my extensive experience — focus on organization and structure, commitment to
-                      efficiency,
-                      leadership in solving problems with available resources, communication skills, team-oriented work
-                      ethic
-                      — and new coding knowledge to an exciting career in the tech industry.
-                    </span>
-                  </div>
-
-                  <!-- </div>
-                  </div> -->
-                </div>
-              </div>
-              <div class="card-panel hoverable hide-on-med-and-up" id="about-card-small">
-                <div class="row">
-                  <!-- <div class="card-panel grey darken-3">
-                    <div class="row"> -->
-
-                  <div class="col s12 m6 floated" id="about-img-small">
-                    <!-- <div class="card"> -->
-                    <div class="card-image">
-                      <img class="materialboxed" data-caption="Extreme Close-Up!" src="./images/DSC_0314.jpg">
-                    </div>
-                    <!-- </div> -->
-                    <div class="card-panel" id="about-job-small">
-                      <span class="flow-text" id="about-span">
-                        <b>Full Stack Web Developer</b>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="card-content no-padding">
-                    <span class="flow-text" id="about-card-content">My background is in the food service business. I
-                      began as a dishwasher and eventually became the owner-operator
-                      of my own restaurant franchise.
-                      <br>
-                      <br>The experience learning to code, while extremely daunting at times, has instilled in me a
-                      love of programming
-                      and a tremendous sense of accomplishment. I am left with the desire to be pushed further and add
-                      to
-                      my toolkit as I take on new challenges.
-                      <br>
-                      <br>I enjoy applying my extensive experience — focus on organization and structure, commitment to
-                      efficiency,
-                      leadership in solving problems with available resources, communication skills, team-oriented work
-                      ethic
-                      — and new coding knowledge to an exciting career in the tech industry.
-                    </span>
-                  </div>
-
-                  <!-- </div>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="parallax-container valign-wrapper">
-      <div class="no-pad valign-wrapper" id="halign-wrapper">
-        <div class="container">
-          <div class="row quote-row">
-            <div class="col s12">
-              <h4 class="center-align quote">
-                <i class="fa fa-quote-left" aria-hidden="true"></i> Every great developer you know got there by solving
-                problems they were unqualified to solve until they
-                actually did it.
-                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                <br>
-                <span class="light grey-text text-lighten-3">- Patrick McKenzie</span>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- yes that is a picture of my screen -->
-      <div class="parallax">
-        <img src="./images/projects2.jpg">
-      </div>
-    </div>
-
-
-
-    <div class="section projects scrollspy bkgrd-col" id="projects-link">
-
-      <div class="container scrollspy-margin">
-        <div class="row">
-          <div class="col s8 offset-s2">
-            <div class="card-panel section-title z-depth-0" id="projects-title">
-              <h1 class="center title-text" id="projects-text">Projects</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <ul id="staggered-list1" style="opacity: 0;">
-        <li>
-          <div class="row">
-
-            <div class="col s12 m5 offset-m1" id="project1">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/connect-four-1.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">Connect Four
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://petercolella.github.io/Connect-Four-Game/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Connect Four
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: HTML, CSS, Javascript, jQuery</p>
-                  <p>Player One plays the black pieces and Player Two plays the red pieces. Player One begins by
-                    clicking on
-                    column of his/her choice. Pieces automatically move to the lowest available space in the selected
-                    column.
-                    The object of the game is to connect four of your checkers in a row horizontally, vertically, or
-                    diagonally.
-                    After a game has been won, the scoreboard is updated. The board is cleared by clicking the new game
-                    button.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s12 m5">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/trigger-happy.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">Trigger Happy
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://asmr-trigger-happy.herokuapp.com/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Trigger Happy
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: MEN Stack, Handlebars</p>
-                  <p>This application allows users to share their favorite ASMR videos and provide specific information
-                    about
-                    the "Triggers" found in each one.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </li>
-
-      </ul>
-      <ul id="staggered-list2" style="opacity: 0;">
-
-        <li>
-          <div class="row">
-
-            <div class="col s12 m5 offset-m1">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/imbible-1.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">Imbible
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://imbible3.herokuapp.com/#!/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Imbible
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: MEAN Stack, Bootstrap, Passport</p>
-                  <p>Imbible is an app that lets users submit whatever they have on hand to discover what classic
-                    cocktails
-                    they are able to craft with their limited resources. In addition, a user can add whatever
-                    concoction
-                    they came up with to our list of libations and have others review it.</p>
-                  <br>
-                  <p>We wanted to reintroduce our users to the storied world of mixology. In doing so, we hope that
-                    they gain
-                    a renewed appreciation of the art to making a good drink. Just as one eats not only to be
-                    nourished,
-                    but to enjoy the flavors created through the love of food, one should drink not to be intoxicated,
-                    but
-                    to experience a similar enjoyment. We made our app with hope that we could contribute to that
-                    enjoyment.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s12 m5">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/city-data-1.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">City Tips
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://city-tips.herokuapp.com/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">City Tips
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: Ruby on Rails, Bootstrap, Devise, PostgreSQL</p>
-                  <p>This is a Ruby on Rails app where users can view and leave tips for their favorite cities.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </li>
-
-      </ul>
-      <ul id="staggered-list3" style="opacity: 0;">
-
-        <!-- <li style="opacity: 0; transform:translateX(-150%)"> -->
-        <li>
-          <div class="row">
-
-            <div class="col s12 m5 offset-m1">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/V.i.A.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">V.i.A
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://via-vendor-app.herokuapp.com/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">V.i.A
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: Ruby on Rails, Materialize, Devise, PostgreSQL</p>
-                  <p>V.i.A is an app that provides user access to key information about a company or organization's
-                    approved
-                    vendors and purveyors. The app is especially applicable to the restaurant industry in which a wide
-                    array
-                    of vendors are dealt with on a daily basis. Additionally, the specific information for each vendor
-                    changes
-                    often and sometimes is not readily communicated from upper management to those who actually use the
-                    information.</p>
-                  <br>
-                  <p>With this app, users not only have access to vendor information. They can also call, email, link
-                    to the
-                    vendor's website, and get driving directions if it's necesssary to go to the vendor's location. In
-                    short,
-                    V.i.A keeps the user's resources organized and accessible.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s12 m5">
-              <div class="card hoverable">
-                <div class="card-image img-container waves-effect waves-block waves-light">
-                  <img class="activator project-image" src="./images/maribelle.png">
-                  <div class="middle">
-                    <div class="activator project-hover-text">
-                      <i class="small material-icons">info_outline</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content flow-text">
-                  <span class="card-title activator grey-text text-darken-4">Belated Birthday Wish
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a target="_blank" href="https://petercolella.github.io/maribelle/">
-                      <i class="small material-icons">open_in_new</i>
-                    </a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Belated Birthday Wish
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>Technologies: Materialize, Animate.css, jQuery</p>
-                  <p>This is a simple landing page to wish my niece, Maribelle, a belated Happy Birthday.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </li>
-
-      </ul>
-
-    </div>
-
-    <div class="parallax-container valign-wrapper">
-      <div class="no-pad valign-wrapper" id="halign-wrapper">
-        <div class="container">
-          <div class="row quote-row">
-            <div class="col s12">
-              <h4 class="center-align quote">
-                <i class="fa fa-quote-left" aria-hidden="true"></i> Perfection is not attainable, but if we chase
-                perfection we can catch excellence.
-                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                <br>
-                <span class="light grey-text text-lighten-3">- Vince Lombardi</span>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="parallax">
-        <img src="./images/awards2.png">
-      </div>
-    </div>
-
-    <div class="section awards scrollspy bkgrd-col" id="awards-link">
-
-      <div class="container scrollspy-margin">
-        <div class="row">
-          <div class="col s8 offset-s2">
-            <div class="card-panel section-title z-depth-0" id="awards-title">
-              <h1 class="center title-text" id="awards-text">Awards</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <div class="card hoverable" id="awards" style="opacity: 0;">
-              <div class="card-image" id="awards-card-img">
-                <img class="materialboxed" id="awards-img" data-caption="I cannot express how fortunate I was to learn and work with these amazing people."
-                  src="./images/angelhack.jpg">
-                <span class="card-title" id="awards-card-title">AngelHack Global Hackathon Series: Atlanta, May 20 2017</span>
-              </div>
-              <div class="card-content">
-                <p>Winner: Best Voice User Experience Using Amazon Alexa</p>
-              </div>
-              <div class="card-action">
-                <a target="_blank" href="http://www.hackathon.io/job-hunt1">Hackathon.io</a>
-                <a target="_blank" href="https://github.com/petercolella/job-hunt-lambda-function/blob/master/lambda.js">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal" id="resume">
-      <div class="modal-content" id="resume-content">
-        <h2 class="header center" id="resume-header">Resume</h2>
-        <!-- <div class="row">
-          <div class="col s12">
-            <div class="card"> -->
-        <!-- <div> -->
-        <object class="resume" data="./documents/PeterColellaResume.pdf" type="application/pdf"></object>
-        <!-- </div> -->
-        <div class="modal-footer">
-          <a target="_blank" href="./documents/PeterColellaResume.pdf">Click Here to Open in New Tab</a>
-        </div>
-        <!-- </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </main>
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row center">
-        <ul style="display: inline-flex;">
-          <li>
-            <a target="_blank" class="grey-text text-lighten-3" href="https://github.com/petercolella">
-              <i class="fa fa-github" style="font-size: 2em"></i>
-            </a>
-          </li>
-          <span></span>
-          <li>
-            <a target="_blank" class="grey-text text-lighten-3" href="https://www.linkedin.com/in/peter-colella/">
-              <i class="fa fa-linkedin" style="font-size: 2em"></i>
-            </a>
-          </li>
-          <span></span>
-          <li>
-            <a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/_PeterColella">
-              <i class="fa fa-twitter" style="font-size: 2em"></i>
-            </a>
-          </li>
-          <span></span>
-          <li>
-            <a target="_blank" class="grey-text text-lighten-3" href="mailto:colella.peter.j@gmail.com">
-              <i class="fa fa-envelope-o" style="font-size: 2em"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-copyright">
-      <div class="container menu_item">
-        ©
-        <script type="text/JavaScript">
-          document.write(new Date().getFullYear());
-        </script> Peter Colella
-        <a target="_blank" class="grey-text text-lighten-4 right menu_link" href="http://www.petercolella.com/">
-          <span class="menu_title">
-            <span class="website menu_word" data-hover="petercolella.com">petercolella.com</span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.slider').slider({
-        interval: 2000
-      });
-      $(".button-collapse").sideNav();
-    });
-    $('.modal').modal();
-    $('.parallax').parallax();
-    $('.scrollspy').scrollSpy({
-      scrollOffset: 0
-    });
-  </script>
-  <script type="text/javascript">
-    var options = [{
-      selector: '#staggered-list1',
-      offset: 100,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '#staggered-list2',
-      offset: 100,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '#staggered-list3',
-      offset: 100,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '#about',
-      offset: 200,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    },
-    {
-      selector: '#awards',
-      offset: 200,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    }
-    ];
-    Materialize.scrollFire(options);
-  </script>
-</body>
-
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
