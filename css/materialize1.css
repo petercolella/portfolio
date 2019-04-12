@@ -397,13 +397,12 @@ span {
 }
 
 .card#awards .card-image {
-  transition: overflow 3s ease !important;
   max-height: 70%;
   overflow: hidden;
 }
 
-#awards-card-img {
-  transition: overflow 3s ease !important;
+#awards-img {
+  transition: height 0.25s ease-in-out !important;
 }
 
 #awards-card-title {
